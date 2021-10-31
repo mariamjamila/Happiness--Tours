@@ -1,8 +1,9 @@
 .footer{
-    height: 200px;
+   
+    height: 60px;
     background-color: black;
 }
-.footer text{
+.footer small{
 
     color: white;
 }

@@ -4,12 +4,12 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="row">
-                <div className="col6">
-                   <small>Contact:</small>
+                <div className="col-6">
+                   <small>Contact us:</small>
 
                 </div>
 
-                <div className="col6">
+                <div className="col-6">
                    <small>Subscribe:</small>
                 </div>
             </div>

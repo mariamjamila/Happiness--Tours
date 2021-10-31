@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NewTravel = () => {
+const AddTravel = () => {
     return (
         <div>
          <h2>Add a new Travel</h2>   
@@ -8,4 +8,4 @@ const NewTravel = () => {
     );
 };
 
-export default NewTravel;
+export default AddTravel;
