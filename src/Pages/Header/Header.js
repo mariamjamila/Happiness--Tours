@@ -21,24 +21,26 @@ const Header = () => {
           <Nav.Link as={Link} to="/#services">
             Travel Spots
           </Nav.Link>
+         
           <Nav.Link as={Link} to="/booking">
             Book Travel
           </Nav.Link>
           <Navbar.Toggle />
-          <Navbar.Collapse className="justify-content-end">
+       
+          <Nav>
+            {user?.email ? (
+              <>
+                 <Navbar.Collapse className="justify-content-end">
              <Nav.Link as={Link} to="/myOrders">
             My Orders
           </Nav.Link>
-             <Nav.Link as={Link} to="/addTravel">
+          <Nav.Link as={Link} to="/addTravel">
            Add Travel
           </Nav.Link>
              <Nav.Link as={Link} to="/manageOrders">
            Manage Orders
           </Nav.Link>
           </Navbar.Collapse>
-          <Nav>
-            {user?.email ? (
-              <>
               <button onClick={logOut} type="button" className="btn btn-light">
                 LogOut
               </button>

@@ -31,7 +31,7 @@ const MyOrders = () => {
             const remaining= bookings.filter(booking=>booking._id !== id)
             setBookings(remaining)
         });
-            
+    
         
 
     }
@@ -49,7 +49,7 @@ const MyOrders = () => {
                         <h4>Cost:<small>{booking.destination?.price}</small></h4>
                         <small>Email:{booking.user}</small>
                           <button onClick={()=>handleDelete(booking._id)} className="btn btn-danger">Delete</button>
-                          
+                         
                     </div>
                 )
             }

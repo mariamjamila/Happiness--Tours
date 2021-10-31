@@ -47,10 +47,17 @@ const Booking = () => {
             <form onSubmit={handleSubmit(onSubmit)} className="d-flex flex-column w-50">
                 <h2>Book your Tour</h2>
                 {/* register your input into the hook by invoking the "register" function */}
-                <input
+                <input value={user.displayName}
                     className="p-2 m-2"
                     {...register("name")}
-                    placeholder="name of tour"
+                    placeholder={user.displayName}
+                    disabled
+                />
+                <input value={user.email}
+                    className="p-2 m-2"
+                    {...register("email")}
+                    placeholder={user.email}
+                    disabled
                 />
 
                 {/* include validation with required or other standard HTML validation rules */}
