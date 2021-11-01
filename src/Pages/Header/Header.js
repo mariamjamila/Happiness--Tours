@@ -15,16 +15,10 @@ const Header = () => {
           <Nav.Link as={Link} to="/">
             Home
           </Nav.Link>
-          <Nav.Link as={Link} to="/About">
+          <Nav.Link as={Link} to="/about">
             About
           </Nav.Link>
-          <Nav.Link as={Link} to="/#services">
-            Travel Spots
-          </Nav.Link>
-         
-          <Nav.Link as={Link} to="/booking">
-            Book Travel
-          </Nav.Link>
+
           <Navbar.Toggle />
        
           <Nav>

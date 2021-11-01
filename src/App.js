@@ -3,6 +3,7 @@ import "./App.css";
 import AuthProvider from "./Context/AuthProvider";
 import Footer from "./Pages/Footer/Footer";
 import Header from "./Pages/Header/Header";
+import About from "./Pages/Home/About/About";
 import Home from "./Pages/Home/Home";
 import AddTravel from "./Services/AddTravel/AddTravel";
 import Booking from "./Services/Booking/Booking";
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route exact path="/login">
            <Login></Login>
+          </Route>
+          <Route exact path="/about">
+           <About></About>
           </Route>
           <Route exact path="/addTravel">
            <AddTravel></AddTravel>
